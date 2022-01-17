@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+</head>
+<!--
+            ---------------JavaScript----------------------
+
+    Lenguaje de programación para añadir interactividad
+    No genera ningun tipo de de codigo compilado
+    Fundamentos:
+
+    1. Interpretado y orientado a objetos
+    2.Debilmente Tipado
+    3.Utiliza en un principio una especificacion del lenguaje ECMAscript6
+    4. Sintanxis similar a C y convenciones similares de codificacion de Java
+    aunque sin relacionar.
+    5. Uso principal en el lado Cliente(Navegador), pero existe tambien opciones
+    del lado del servidor.
+    6.Debilidad en las grafias y ;
+    7.Sintaxis:
+    <script>
+        alert("texto")
+    <script/>
+-->
+
+<body>
+    <!--
+        Configurar los alert: http://sweetalert.js.org/guides/
+        1. instalarnos unas librerias, que dan estilo a los alert.
+        $npm install sweetalert --save
+        ->node js
+        2.inyectar la libreria con un script
+    
+    -->
+    <script>
+     //   alert("Bienvenido a mi primer Script");
+        swal({
+            title:"Bienvenido a mi primer Script",
+            text:"Presiona para Salir",
+            icon:"success",
+            /*
+            "warning"
+            "error"
+            "success"
+            "info"
+            */
+           button:"Gracias!",
+
+        });
+    /*
+    console(log)
+    Es un método que nos muestra un mensaje de contenido en consola,
+    recibe como argumento uno o mas objetos.Cada objeto se evalua
+    y concatena en un string separados por espacios
+    */
+        console.log(3+5);
+
+        document.write("<h1>Hola desde mi pagina JS</h1>");
+    </script>
+</body>
+</html>

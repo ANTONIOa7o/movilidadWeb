@@ -1,0 +1,23 @@
+h1{
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 2px silver;
+    font-weight:bold ;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+/*
+efectos alert
+*/
+.swal-overlay{/*fondo*/
+background-color: rgb(203, 241, 233);
+}
+.swal-modal{/*Ventana*/
+    border:3rem;
+}
+.swal-footer{
+    background-color: rgb(245, 248, 250);/*Pie del boton*/
+    margin-top: 32px;
+    border-top: 1px solid #E9EEF1;
+}
