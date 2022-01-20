@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura de control if-else anidada</title>
+</head>
+
+<body>
+    <h3>Ejercicio: El departamento de calidad ha detectado que los faros con id(nº) par, defectuosos(Despiece) los .
+        impares a revisar (Dpt. Calidad o cada tres unidades, no funcionaban (Desperdicio))
+    </h3>
+    <script>
+
+        var numero = parseInt(window.prompt("Introduce id del faro:"));
+
+        if ((numero % 2 == 0) && (numero % 3 == 0)) {
+            alert("Es par y multiplo de 3= Es defectuoso y a desperdicio ");
+        } else if (!(numero % 2 == 0) && (numero % 3 == 0)) {
+            alert("Impar y multiplo de 3 = Revisar y a Despercidio");
+        } else if (!(numero % 3 == 0) && (numero % 2 == 0)) {
+            alert("No es multiplo de 3 && pero si par = Defectuoso llevar a despiece");
+        } else {
+            alert("No es par ni multiplo de 3 = Revisar, dpt Calidad");
+        }
+
+    </script>
+</body>
+
+</html>

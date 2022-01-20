@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Logicos, relacionales y aritmeticas</title>
+</head>
+<body>
+    <script>
+        /*
+        a) Operadores Lógicos.-
+Operacion               Operador                       Descripcion
+
+  Y                         &&       Considerará true(verdadero) si ambas sentencias son ciertas.
+  Ó                         ||       Considerará true(verdadero) al alguna de las sentencias son ciertas.
+  NO                        !        Devolverá el valor contrario del operador
+        
+        b) Operaddores Relacionales.-
+
+Operación               Operador                    Descripcion
+
+Igual a                 = =             Igualdad entre elementos comparados
+distinto de             !=              Contrario al elemento comparado
+Mayor, mayor e igual    >,>=            Comparacion de cantidad, mayor o mayor e igual
+Menor, menor e igual    <,<=            Comparacion de cantidad menor o menor o igual
+igualdad estricta      = = =            Igualdad en tdos los aspectos, incluidos el tipo de variable
+Distinto estrica       ! = =            Contrario al elemnto comparado de manera estricta.
+
+        c) Operadores Aritmeticos.-
+
+Operacion                           Operador
+
+Suma y resta                            +,-
+Multiplicacion y division               *,/
+Cambio de signo                         -
+Incremento                              ++
+Decremento                              --
+Division entera                         /
+Resto de division(modulo)               %
+ */
+var numero =7;
+
+console.log("igualdad: "+ (numero == 7));
+console.log("desigualdad: "+(numero != 7));
+console.log( "Mayor: "+(numero>7));
+console.log("Mayor o igual:" + (numero >=10));
+console.log("Menor:" +(numero<5));
+console.log("Menor o igual:" + (numero<=7));
+//Igualdad estricta
+console.log("Igualdad: "+(numero == "7"));
+console.log("Igualdad estricta: "+ (numero === "7"));
+
+console.log("Desigualdad: "+(numero !="7"));
+console.log("Desigual estricta: "+ (numero !=="7"));
+//Operadores Lógicos
+
+var nombre1 = "Juan";
+var nombre2 = "Pepa";
+
+console.log("Y: " + ((nombre1=="Juan")&&(nombre2=="Pepaaaaa")));
+console.log("Ó: " + ((nombre1=="Juan")||(nombre2=="Pepaaaaa")));
+console.log("NO: "+ (!(nombre2=="Pepaaaaa")));
+console.log("NO: "+(!(nombre1=="Juan")));
+
+
+    </script>
+</body>
+</html>
