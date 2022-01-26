@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        -------------------Estructuras de Control-------------------
+
+3. for
+ 
+Necesidd de usar contadores, para recorrer determinadas estructuras de elementos(Array) y analogía
+con otros lenguajes
+Sintaxis:
+                                   ↓*
+for(contador=valor inicial;condicion del bucle;[incremento,decremento..]){
+
+    cuerpo del bucle;
+}
+*- Será la expresion que indica si el cuerpo del bucle se debe ejecutar. Mientras esa condicion sea verdardera
+bucle se repetirá. En el momento que sea falsa se detendrá.
+Esta estructura podrá anidar otros bucles o estructuras de control
+
+Ejemplo1: mostrar los numeros del 1 al 10
+    -->
+
+    <script>
+        /*  for (var pili =1 ;pili <= 10; pili++){
+              console.log(pili);
+              document.write(pili);
+          } Ejemplo2 multiplos de 5*/
+
+        var multiplo;
+        for (multiplo = 1; multiplo <= 50; multiplo++) {//Esturcturar el reccorrido de 1 a 50, recordar multiplo + 5, = 0
+            if (multiplo % 5 == 0){
+                document.write(multiplo + " ");
+            }
+            //resto de la division sea 5 = 0
+        }
+
+    </script>
+</body>
+
+</html>

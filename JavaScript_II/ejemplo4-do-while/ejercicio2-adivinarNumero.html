@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinar numero entre el 1 y el 50
+        teniendo 6 intentos
+    </title>
+</head>
+
+<body>
+    <script>
+        var numero = parseInt(Math.random() * 50);
+        console.log(numero);
+        var adivina = 0;
+        var intentos = 6;
+
+        do {
+            adivina = parseInt(window.prompt("Adivina nº del 1 al 50"));
+            //intentos--; otro modo
+
+            if (adivina > numero) {
+                alert("te has pasado, te quedan " + (intentos--) + " intentos");
+
+            } else if (adivina < numero) {
+                alert("Te has quedado corto " + (intentos--) + " intentos");
+            }
+        } while (adivina != numero && intentos > 0);
+
+
+        if (numero == adivina) {
+            alert("Enhorabuena!!! has acertado")
+        } else {
+            alert("lo siento se te acabaron los intentos");
+        }
+
+    </script>
+</body>
+
+</html>

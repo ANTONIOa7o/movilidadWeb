@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+
+        function ejecutar() {
+            var texto = document.getElementById("resultado");
+            var option = document.getElementById("option").value;
+
+            switch (option) {
+
+                case "1":
+                    texto.innerText = "FORMATEANDO EL DISCO, por favor espere...";
+                    break;
+                case "2":
+                    texto.innerText = "FORMATEANDO EL DISCO, por favor espere...";
+                    break;
+                case "3":
+                    texto.innerText = "FORMATEANDO EL DISCO, por favor espere...";
+                    break;
+                case "4":
+                    texto.innerText = "Su navegador esta monotorizado" + navigator.userAgent;
+                case "5":
+                    texto.innerText = "FORMATEANDO EL DISCO, por favor espere...";
+                    break;
+                    default:
+                        texto.innerText ="Necesario ingresar opciones del 1 al 5";
+                    break;
+            }
+        }
+
+
+    </script>
+    <div class="container" style="width: 380px;">
+        <h2>Alertas de Acciones</h2>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Formatear</div>
+                    Eliminacion global permanente de todo tipo de archivos de la raiz del sistema
+                </div>
+                <span class="badge bg-danger rounded-pill">↓</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Destruccion</div>
+                    Borrado total de las unidades de almacenamiento
+                </div>
+                <span class="badge bg-warning rounded-pill">!</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Cambio direccion Ip dinamica</div>
+                    Redirecionando a ip, con permisos de administrador
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Datos copiados de tu navegador</div>
+                    Caracteristicas definidas en tu entorno cliente
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Salir</div>
+                </div>
+                <span class="badge bg-primary rounded-pill">exit</span>
+            </li>
+        </ol>
+        <input type="text" id="option">
+        <button type="button" class="btn btn-danger" onclick="ejecutar()">Ejecutar</button>
+        <div class="post-it" id="resultado"></div>
+    </div>
+    <style>
+        .post-it {
+            width: 15.62rem;
+            height: 15rem;
+            position: relative;
+            background-color: #ffa;
+            margin: 30px auto;
+            padding: 50px;
+            border-radius: 0 0 0 30px/45px;
+            box-shadow:
+                inset 0 -40px 40px rgb(0, 0, 0, 0.2),
+                inset 0 25px 10px rgba(0, 0, 0, 0.2),
+                0 5px 6px 5px rgba(0, 0, 0, 0.2);
+            /* inset cambia la sombra proyeccion dentro del marco, dibuja o
+                                            o proyecta dentro del borde*/
+            font-family: 'Permanent Marker', cursive;
+            line-height: 1.7em;
+            font-size: 19px;
+        }
+    </style>
+</body>
+
+</html>
